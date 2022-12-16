@@ -1,6 +1,15 @@
 body{
   background-color: #172c3f;
 }
+.title{
+  text-align: center;
+  font-family: monospace;
+  color: whitesmoke;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+}
 .contenedor-calculadora{
   background-color: steelblue;
   border: 1px solid whitesmoke;
@@ -29,9 +38,7 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
 }
-.boton:hover{ 
-  background-color: lightseagreen;
-}
+
 .pantalla {
   border: 1px solid grey;
   border-radius: 8px;
@@ -46,12 +53,20 @@ body{
 @media screen and (max-width:576px) {
   .contenedor-calculadora{
     width: 80vw;
-    height: 80vh;
+    height: 60vh;
   }
   .pantalla{
     font-size: 32px;
   }
   .boton{
     font-size: 24px;
+  }
+  .boton:active{
+    border: 2px inset whitesmoke;
+  }
+}
+@media (hover:hover){
+  .boton:hover{ 
+    background-color: lightseagreen;
   }
 }
